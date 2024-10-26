@@ -2,7 +2,7 @@ import styles from '../navBar/NavBar.module.css'
 import PrimaryButton from '../Buttons/PrimaryButton'
 
 //Import icons from navbar
-import user from '../../../public/assets/images/user.svg'
+//import user from '../../../public/assets/images/user.svg'
 import id from '../../../public/assets/images/id.svg'
 import book from '../../../public/assets/images/book.svg'
 import exit from '../../../public/assets/images/exit.svg'

@@ -5,32 +5,31 @@ import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const PresencaChart = () => {
-  // Dados do gráfico de presença
   const data = {
     labels: ['Falta', 'Presença'],
     datasets: [
       {
         label: 'Presença',
-        data: [6.3, 93.7], // Percentuais de falta e presença
-        backgroundColor: ['#90ee90', '#333'], // Verde claro e preto
-        borderWidth: 0, // Sem bordas ao redor das fatias
+        data: [6.3, 93.7], // porcentagem
+        backgroundColor: ['#90ee90', '#333'], // cores
+        borderWidth: 0,
       },
     ],
   };
 
-  // Opções de configuração do gráfico
+  
   const options = {
     responsive: true,
-    maintainAspectRatio: false, // Para ajustar ao container
+    maintainAspectRatio: false,
     plugins: {
       legend: {
-        display: false, // Remove a legenda
+        display: false, 
       },
       tooltip: {
-        enabled: false, // Desativa o tooltip ao passar o mouse
+        enabled: false, 
       },
     },
-    cutout: '55%', // Cria o efeito "donut"
+    cutout: '55%', // efeito donut
   };
 
   return (
@@ -40,7 +39,6 @@ const PresencaChart = () => {
   );
 };
 
-// Estilos da div .grafico2
 const styles = {
   divGrafico2: {
 
